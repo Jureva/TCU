@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+  <title>Tallaght Centre for the Unemployed</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="utf-8">
+
+
+  <link rel="stylesheet" href="css/custom.css" type="text/css">
+  <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css" type="text/css">
+  <link rel="stylesheet" href="css/jquery.toastmessage.css" type="text/css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css" type="text/css">
+  <script src="js/script.js" type="text/javascript"></script>
+
+  <script src="js/jquery.toastmessage.js" type="text/javascript"></script>
+ 
+</head>
+
+<body>
+
+  <header>
+
+    <div class="w3-container"> <!-- Logo div -->
+    <img src="images/logo.png">
+    <h1 id="logo"><a class="no_line" href="index.html">Tallaght Centre for the Unemployed</a></h1>
+
+     
+    </div>
+
+    <div id="full_navbar"> <!-- Navbar div -->
+
+      <nav>
+      <p class="w3-center padd-center"><a class="no_line" href="index.html">Home</a> | <a class="no_line" href="about.html">About</a></p>
+        
+
+        
+
+      </nav>
+
+    </div>
+
+  </header>
+  
+  
+       <div id="address">
+    			
+    				<table style="width:100%">
+    				 
+    					<td><h2 class="contact_h2"> Contact Us </h2>
+    					<p class="address">St. Dominic Street, Tallaght, Dublin 24, IE <br>
+    						Email: tcureception@gmail.com <br>
+    						Phone: 01-4512983, Fax: 01-4526094</p></td>
+    				 
+    				</table>
+    			 
+    				</div>
+    				
+    				<div class="w-3container">
+    				   <td><img src="images/entrance.jpg" style="width:65%;" alt="Entrance"></td>
+    				<div id="googleMap" style="width:65%; height:500px;" alt="Location map">
+    				</div>
+    			 <script> 
+    			 function myMap() {
+    			   
+    			   var myLatLng = {lat: 53.2882802, lng: -6.3649524};
+    			   
+              var mapProp= {
+                  center:new google.maps.LatLng(53.2882802,-6.3649524,17),
+                  zoom:17,
+              };
+              var map= new google.maps.Map(document.getElementById("googleMap"), 
+              mapProp);
+              addMarker(google.maps.LatLng(53.2882802,-6.3649524), map)
+              }
+              
+              function addMarker(location, map) {
+              var marker = new google.maps.Marker({
+                position: {location},
+                map: map,
+                title: "Tallaght Centre for the Unemployed"
+              });
+               marker.setMap(googleMap);
+              }
+          </script> 
+          <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB26nXLfXVdLrTuuNchKm0TMIAXQLJNMVw&callback=myMap"></script>
+          
+    				
+            </div>
+       
+        <!-- Body Ends Here -->
+
+    </div>
+
+    <div id="full_footer">
+
+      <footer class="w3-container cust_footer">
+
+          <p class="w3-center padd-center"><a class="no_line" href="index.html">Home</a> | <a class="no_line" href="about.html">About</a></p>
+
+      </footer>
+
+    </div>
+
+</body>
+
+</html>

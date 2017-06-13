@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+  <title>Tallaght Centre for the Unemployed</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="utf-8">
+
+  <!--<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="/favicon.ico" type="image/x-icon">-->
+
+  <link rel="stylesheet" href="css/custom.css" type="text/css">
+  <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css" type="text/css">
+  <link rel="stylesheet" href="css/jquery.toastmessage.css" type="text/css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css" type="text/css">
+  <script src="js/script.js" type="text/javascript"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js" type="text/javascript"></script>
+  <script src="js/jquery.toastmessage.js" type="text/javascript"></script>
+
+  <style>
+  .mySlides {display:none}
+  .w3-right, .w3-badge {cursor:pointer}
+  .w3-badge {height:11px;width:11px;padding:0;background-color:transparent}
+  </style>
+
+</head>
+
+<body>
+
+  <header>
+      <div class="w3-container"> <!-- Logo div -->
+      <img src="images/logo.png">
+        <h1 id="logo"><a class="no_line" href="index.html">Tallaght Centre for the Unemployed</a></h1>
+        
+      
+      </div>
+
+      <div id="full_navbar"> <!-- Navbar div -->
+
+        <nav>
+<p class="w3-center padd-center"><a class="no_line" href="index.html">Home</a> | <a class="no_line" href="about.html">About</a> | <a class="no_line" href="contact.html">Contact</a></p>
+
+         
+        </nav>
+
+      </div>
+
+    </header>
+
+    <div class="w3-container"> <!-- Main body content div -->
+
+       
+      <div class="w3-container w3-center w3-padding-16">
+
+        <!--<button onclick="document.getElementById('subscribe').style.display='block'" class="w3-btn w3-blue w3-large">Sign-up for our newsletter!</button>-->
+
+        
+
+           
+              <p id="message" class="w3-blue"></p>
+              <div class="w3-section">
+            
+              <p class="w3-center"><b>Mission Statement</b>
+<br>Tallaght Centre for the Unemployed Ltd. is a people centred organisation, which is focussed on the needs of the long term unemployed, unemployment and related issues.  
+
+<br>Tallaght Centre for the Unemployed Ltd. is committed to protecting the welfare and rights of all individuals irrespective of background or culture.
+
+<br>Tallaght Centre for the Unemployed Ltd. is committed to making the workplace anti-racist and treats all individuals equally.
+
+<br>Tallaght Centre for the Unemployed Ltd. does this through a structured system that sets quality objectives which measures its activities against its vision, mission and ethos.
+
+</p>
+
+              <p><label><b>Centre Aims & Objectives</b></label>
+<br>To challenge the issues affecting the unemployed
+<br>To challenge peoples perception of the unemployed
+<br>To campaign and act as a voice for the issues affecting unemployed people
+<br>To provide the appropriate welfare information and support services for people in the locality
+<br>To provide a range of education and training opportunities for long term unemployed people in the locality
+<br>To develop programmes and provide significant training that will assist people in their pursuit of employment or further education
+<br>To actively seek and develop opportunities for people locally and other clients of the centre 
+<br>To provide a safe and fair working environment for each participant 
+<br>To provide participants with appropriate training 
+<br>To prepare participants for the workforce through work based training and employment opportunities
+</p>
+              <p><label><b>Training</b></label>
+<br>The centre has a fully equipped computer training room with Broadband access and the capacity for 10 students. Affordable basic computer training courses are available and many thousands of students have passed through the doors since the centre opened.
+The centre assists and supports various organisations in the wider Tallaght area and is greatly involved in the implementation of new initiatives particularly in the field of childcare and computer training for seniors and elders.
+The centre provides work experience opportunities to individuals who are training or participating on programmes outside the centre. 
+<br>Needs
+<br>a)	The needs of the local community are identified directly through the people who use the centre, those who are unemployed and many who are actively employed.  Also, through liaison with social welfare, local organisations & community group’s specific needs are identified.
+<br>b)	Local people who are long term unemployed are disadvantaged because of their circumstances, Tallaght Centre is a place where they are treated as equals and they feel the facility provides a service that can help them fulfil their needs whether it is to source information or provide access to other services.  These individuals can do so in the centre without feeling victimised or targeted. 
+<br>Benefits
+<br>The benefits occurring as a result of the operations of Tallaght Centre for Unemployed include:
+<br>a)	People are better informed and prepared about local employment opportunities when job seeking due to the quality of information and service they receive in the centre, also clients have professionally prepared CV's and letters of application for jobs for particular purposes. 
+<br>b)	A greater number of people are using the service to help them actively pursue gainful employment, further education and training opportunities.
+<br>c)	Individuals who participate in work experience in the centre are gaining skills and knowledge that will equip and prepare them for their future endeavours when job seeking.
+</p>
+  </p>             
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Three images below -->
+
+      <div class="w3-container w3-center">
+
+        <div class="w3-row-padding w3-padding-16">
+          <div class="w3-container w3-third w3-padding-top">
+            <img src="images/pc_class.jpg" style="width:65%;cursor:pointer"
+            onclick="onClick(this)" class="w3-hover-opacity" alt="">
+            <img src="images/work.gif" style="with:35%;">
+          </div>
+        </div>
+
+       <!-- <div id="modal01" class="w3-modal" onclick="this.style.display='none'">
+          <span class="w3-closebtn w3-hover-red w3-text-white w3-xxlarge w3-container w3-padding-16 w3-display-topright">×</span>
+          <div class="w3-modal-content w3-animate-zoom">
+            <img src="#" id="img01" style="width:100%" alt="">
+          </div>
+        </div>-->
+
+        <script>
+        function onClick(element) {
+          document.getElementById("img01").src = element.src;
+          document.getElementById("modal01").style.display = "block";
+        }
+        </script>
+
+      </div>
+
+      <!-- Hidden Modal Items Below -->
+
+      <!--Login Modal 
+      <div id="login" class="w3-modal">
+        <div class="w3-modal-content w3-card-8 w3-animate-zoom" style="max-width:600px">
+
+          <p id="username_error" class="w3-red w3-center"></p>
+          <p id="password_error" class="w3-red w3-center"></p>
+
+          <div class="w3-container">
+            <div class="w3-section">
+              <form onsubmit="return validateLogin()" method="post">
+                <label><b>Username</b></label>
+                <input id="username" class="w3-input w3-border w3-margin-bottom" type="text" placeholder="Enter Username">
+
+                <label><b>Password</b></label>
+                <input id="password" class="w3-input w3-border" type="text" placeholder="Enter Password">
+
+                <button class="w3-btn w3-btn-block w3-green" type="submit">Login</button>
+                <input class="w3-check w3-margin-top" type="checkbox" checked="checked"> Remember me
+              </form>
+            </div>
+          </div>
+
+          <div class="w3-container w3-border-top w3-padding-hor-16 w3-light-grey">
+            <button onclick="document.getElementById('login').style.display='none'" type="button" class="w3-btn w3-red">Cancel</button>
+            <span class="w3-right w3-padding w3-hide-small">Forgot <a href="#">password?</a></span>
+          </div>
+
+        </div>
+      </div>-->
+
+     
+
+      <!-- Hidden Modal Items Above -->
+
+      <!-- Body Ends Here -->
+
+    </div>
+
+    <div id="full_footer">
+
+      <footer class="w3-container cust_footer">
+
+          <p class="w3-center padd-center"><a class="no_line" href="index.html">Home</a> | <a class="no_line" href="about.html">About</a> | <a class="no_line" href="contact.html">Contact</a></p>
+
+      </footer>
+
+    </div>
+
+</body>
+
+</html>
