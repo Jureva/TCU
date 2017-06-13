@@ -65,25 +65,22 @@
     			 <script> 
     			 function myMap() {
     			   
-    			   var myLatLng = {lat: 53.2882802, lng: -6.3649524};
+    			   var myLatLng = {lat: 53.2882802, lng: -6.3627637};   // 53.2882802, -6.3627637
     			   
-              var mapProp= {
-                  center:new google.maps.LatLng(53.2882802,-6.3649524,17),
-                  zoom:17,
-              };
+
               var map= new google.maps.Map(document.getElementById("googleMap"), 
-              mapProp);
-              addMarker(google.maps.LatLng(53.2882802,-6.3649524), map)
-              }
+              {
+                zoom: 17,
+                center: myLatLng
+              });
               
-              function addMarker(location, map) {
               var marker = new google.maps.Marker({
-                position: {location},
+                position: myLatLng,
                 map: map,
                 title: "Tallaght Centre for the Unemployed"
               });
-               marker.setMap(googleMap);
               }
+              
           </script> 
           <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB26nXLfXVdLrTuuNchKm0TMIAXQLJNMVw&callback=myMap"></script>
           
